@@ -1,12 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+button {
+  margin: 20px;
+}
+
+/* Adjust the width of the grid container */
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  width: 640px; /* Adjust the width as needed */
+  width: 640px; /* Set a fixed width for the grid container */
+  height: 640px; /* Set the height to match the width */
+  border: 1px solid black; /* Add a border for visibility */
+  overflow: hidden; /* Add overflow property to contain the grid */
 }
 
+/* Adjust margin and padding of the grid squares */
 .grid-square {
-  width: 40px;
-  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.80);
+  box-sizing: border-box; /* Include border and padding in size calculations */
 }
 
-/* Additional styles for the grid squares if needed */
+/* Add hover effect for grid squares */
+.grid-square.hovered {
+  background-color: black; /* Change the color as desired */
+}
+
