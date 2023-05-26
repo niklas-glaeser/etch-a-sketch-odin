@@ -29,11 +29,11 @@ button {
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.80);
-  box-sizing: border-box; /* Include border and padding in size calculations */
+  box-sizing: border-box;
 }
 
 /* Add hover effect for grid squares */
 .grid-square.hovered {
-  background-color: black; /* Change the color as desired */
+  background-color: black;
 }
 
